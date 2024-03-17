@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D31ADA82BA5E5D200EF944E /* FirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31ADA72BA5E5D200EF944E /* FirstAppApp.swift */; };
+		4D110A4B2BA7242F00B054F6 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D110A4A2BA7242F00B054F6 /* SessionView.swift */; };
+		4D110A4D2BA7254E00B054F6 /* FirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D110A4C2BA7254E00B054F6 /* FirstAppApp.swift */; };
+		4D110A4F2BA725D600B054F6 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D110A4E2BA725D600B054F6 /* WorkoutsView.swift */; };
+		4D110A522BA72E1800B054F6 /* WorkoutItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D110A512BA72E1800B054F6 /* WorkoutItemView.swift */; };
 		4D31ADAA2BA5E5D200EF944E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31ADA92BA5E5D200EF944E /* ContentView.swift */; };
 		4D31ADAC2BA5E5D400EF944E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D31ADAB2BA5E5D400EF944E /* Assets.xcassets */; };
 		4D31ADAF2BA5E5D500EF944E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D31ADAE2BA5E5D500EF944E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D110A4A2BA7242F00B054F6 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		4D110A4C2BA7254E00B054F6 /* FirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppApp.swift; sourceTree = "<group>"; };
+		4D110A4E2BA725D600B054F6 /* WorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
+		4D110A512BA72E1800B054F6 /* WorkoutItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutItemView.swift; sourceTree = "<group>"; };
 		4D31ADA42BA5E5D200EF944E /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D31ADA72BA5E5D200EF944E /* FirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppApp.swift; sourceTree = "<group>"; };
 		4D31ADA92BA5E5D200EF944E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D31ADAB2BA5E5D400EF944E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D31ADAE2BA5E5D500EF944E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -32,6 +38,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D110A492BA7239F00B054F6 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				4D110A4A2BA7242F00B054F6 /* SessionView.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		4D110A502BA72D5800B054F6 /* YourWorkouts */ = {
+			isa = PBXGroup;
+			children = (
+				4D110A4E2BA725D600B054F6 /* WorkoutsView.swift */,
+				4D110A512BA72E1800B054F6 /* WorkoutItemView.swift */,
+			);
+			path = YourWorkouts;
+			sourceTree = "<group>";
+		};
 		4D31AD9B2BA5E5D200EF944E = {
 			isa = PBXGroup;
 			children = (
@@ -51,7 +74,11 @@
 		4D31ADA62BA5E5D200EF944E /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
-				4D31ADA72BA5E5D200EF944E /* FirstAppApp.swift */,
+				4D31ADB62BA6FFCC00EF944E /* App */,
+				4D31ADB72BA6FFD300EF944E /* Core */,
+				4D31ADB82BA6FFDD00EF944E /* Extensions */,
+				4D31ADB92BA6FFE200EF944E /* Models */,
+				4D31ADBA2BA6FFED00EF944E /* Utils */,
 				4D31ADA92BA5E5D200EF944E /* ContentView.swift */,
 				4D31ADAB2BA5E5D400EF944E /* Assets.xcassets */,
 				4D31ADAD2BA5E5D500EF944E /* Preview Content */,
@@ -65,6 +92,44 @@
 				4D31ADAE2BA5E5D500EF944E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D31ADB62BA6FFCC00EF944E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4D110A4C2BA7254E00B054F6 /* FirstAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4D31ADB72BA6FFD300EF944E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4D110A502BA72D5800B054F6 /* YourWorkouts */,
+				4D110A492BA7239F00B054F6 /* Session */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4D31ADB82BA6FFDD00EF944E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4D31ADB92BA6FFE200EF944E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D31ADBA2BA6FFED00EF944E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D31ADAA2BA5E5D200EF944E /* ContentView.swift in Sources */,
-				4D31ADA82BA5E5D200EF944E /* FirstAppApp.swift in Sources */,
+				4D110A4B2BA7242F00B054F6 /* SessionView.swift in Sources */,
+				4D110A4F2BA725D600B054F6 /* WorkoutsView.swift in Sources */,
+				4D110A522BA72E1800B054F6 /* WorkoutItemView.swift in Sources */,
+				4D110A4D2BA7254E00B054F6 /* FirstAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
