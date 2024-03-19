@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedTab = Tabs.startWorkout
     var body: some View {
-        NavigationStack {
-            
-            
-            
-        }
+            StartSessionView()
+                .tabItem {
+                    Image(systemName: "dumbbell.fill")
+                }
+                
+        TabBarView(selectedTab: $selectedTab)
     }
 }
-
 #Preview {
     ContentView()
 }
