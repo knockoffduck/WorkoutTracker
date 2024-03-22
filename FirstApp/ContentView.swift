@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var selectedTab = Tabs.startWorkout
+    @State var selectedTab = Tabs.profile
     var body: some View {
-            StartSessionView()
-                .tabItem {
-                    Image(systemName: "dumbbell.fill")
-                }
+        ZStack(alignment: .bottom) {
+            ProfileView()
+//            StartSessionView()
+//                .tabItem {
+//                    Image(systemName: "dumbbell.fill")
+//                }
+        
+            TabBarView(selectedTab: $selectedTab)
                 
-        TabBarView(selectedTab: $selectedTab)
+        
+            
+        }
+            
+            
+        
+            
     }
 }
 #Preview {

@@ -11,10 +11,6 @@ struct StartSessionView: View {
     
     var workouts: [String] = ["Chest & Triceps", "Legs & Shoulders", "Back & Biceps", "Abs & Calfs"]
     
-    let columns = [
-        GridItem(.adaptive(minimum: 170))
-    ]
-    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -23,14 +19,16 @@ struct StartSessionView: View {
                         Text("Workouts")
                             .fontWeight(.semibold)
                             .frame(maxWidth:.infinity, alignment: .leading)
-                        LazyVGrid(columns: columns, spacing:15 , content: {
-                            ForEach(workouts, id: \.self) {workout in
-                                NavigationLink(value:workout) {
-                                    WorkoutItemView()
+                        NavigationLink{
+                            SessionView()
+                        } label: {
+                            WorkoutItemView()
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                                    
                                         
-                                }
                                 
-                            }
+                        
                             Button(action: {}) {
                                 Image(systemName: "plus")
                                     .resizable()
@@ -39,12 +37,12 @@ struct StartSessionView: View {
                                     
 
                             }
-                            .frame(width: 170, height: 150)
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: 150)
                             .overlay(RoundedRectangle(cornerRadius: 8)
                                 .stroke(.blue)
                                 .opacity(0.1))
                             
-                        })
+                        
 
                     }
                     

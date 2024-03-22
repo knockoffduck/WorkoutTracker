@@ -20,10 +20,12 @@ struct TabBarView: View {
     @Binding var selectedTab: Tabs
     
     var body: some View {
-        VStack {
+        VStack (spacing:0) {
             Rectangle()
                 .foregroundStyle(.tabBar)
+
                 .frame(width: .infinity, height: 0.5)
+
             
             HStack  {
                 Button {
@@ -53,13 +55,17 @@ struct TabBarView: View {
                 }
                 
             }
+            .background(.white)
             .frame(height:50)
 
             
+
+            
         }
+        
     }
 }
 
 //#Preview {
-//    TabBarView(selectedTab: .startWorkout)
+//    TabBarView(selectedTab: )
 //}
