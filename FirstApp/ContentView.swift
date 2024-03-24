@@ -10,17 +10,29 @@ import SwiftUI
 struct ContentView: View {
     @State var selectedTab = Tabs.profile
     var body: some View {
-        ZStack(alignment: .bottom) {
+        TabView {
             ProfileView()
-//            StartSessionView()
-//                .tabItem {
-//                    Image(systemName: "dumbbell.fill")
-//                }
-        
-            TabBarView(selectedTab: $selectedTab)
-                
-        
-            
+                .tabItem {
+                    TabBarButton(buttonText: "Profile", iconName: "person")
+                }
+            Text("Friends Page")
+                .tabItem {
+                    TabBarButton(buttonText: "Friends", iconName: "person.2")
+                }
+            NavigationStack {
+                StartSessionView()
+            }
+                .tabItem {
+                    TabBarButton(buttonText: "Begin", iconName: "plus")
+                }
+            Text("Explore Page")
+                .tabItem {
+                    TabBarButton(buttonText: "Explore", iconName: "dumbbell.fill")
+                }
+            Text("Progress Page")
+                .tabItem {
+                    TabBarButton(buttonText: "Progress", iconName: "trophy.fill")
+                }
         }
             
             

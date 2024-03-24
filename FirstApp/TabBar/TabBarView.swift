@@ -31,27 +31,27 @@ struct TabBarView: View {
                 Button {
                     //Profile
                 } label: {
-                    TabBarButton(buttonText: "Profile", iconName: "person.fill", isActive: selectedTab == .profile)
+                    TabBarButton(buttonText: "Profile", iconName: "person.fill")
                 }
                 Button {
                     //Profile
                 } label: {
-                    TabBarButton(buttonText: "Friends", iconName: "person.2.fill", isActive: selectedTab == .friends)
+                    TabBarButton(buttonText: "Friends", iconName: "person.2.fill")
                 }
                 Button {
                     //Profile
                 } label: {
-                    TabBarButton(buttonText: "Start Workout", iconName: "plus", isActive: selectedTab == .startWorkout)
+                    TabBarButton(buttonText: "Start Workout", iconName: "plus")
                 }
                 Button {
                     //Profile
                 } label: {
-                    TabBarButton(buttonText: "Explore", iconName: "dumbbell.fill", isActive: selectedTab == .explore)
+                    TabBarButton(buttonText: "Explore", iconName: "dumbbell.fill")
                 }
                 Button {
                     //Profile
                 } label: {
-                    TabBarButton(buttonText: "Progress", iconName: "trophy.fill", isActive: selectedTab == Tabs.progress)
+                    TabBarButton(buttonText: "Progress", iconName: "trophy.fill")
                 }
                 
             }

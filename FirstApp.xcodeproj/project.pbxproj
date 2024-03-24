@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D110A4B2BA7242F00B054F6 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D110A4A2BA7242F00B054F6 /* SessionView.swift */; };
 		4D110A4D2BA7254E00B054F6 /* FirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D110A4C2BA7254E00B054F6 /* FirstAppApp.swift */; };
-		4D110A4F2BA725D600B054F6 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D110A4E2BA725D600B054F6 /* WorkoutsView.swift */; };
+		4D110A4F2BA725D600B054F6 /* StartSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D110A4E2BA725D600B054F6 /* StartSessionView.swift */; };
 		4D110A522BA72E1800B054F6 /* WorkoutItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D110A512BA72E1800B054F6 /* WorkoutItemView.swift */; };
 		4D31ADAA2BA5E5D200EF944E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31ADA92BA5E5D200EF944E /* ContentView.swift */; };
 		4D31ADAC2BA5E5D400EF944E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D31ADAB2BA5E5D400EF944E /* Assets.xcassets */; };
@@ -17,12 +17,15 @@
 		4D4FEC4D2BAB208D008D6B53 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4FEC4C2BAB208D008D6B53 /* ProfileView.swift */; };
 		4DB6A2762BA9E998009B770A /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6A2752BA9E997009B770A /* TabBarButton.swift */; };
 		4DB6A2782BA9E9A2009B770A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6A2772BA9E9A1009B770A /* TabBarView.swift */; };
+		C1A52E9A2BB08C9800C4E11E /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A52E992BB08C9800C4E11E /* PostView.swift */; };
+		C1A52E9C2BB08CB900C4E11E /* ProfileDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A52E9B2BB08CB900C4E11E /* ProfileDetailsView.swift */; };
+		C1A52E9E2BB08E7C00C4E11E /* ProfileMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A52E9D2BB08E7C00C4E11E /* ProfileMenuBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D110A4A2BA7242F00B054F6 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 		4D110A4C2BA7254E00B054F6 /* FirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppApp.swift; sourceTree = "<group>"; };
-		4D110A4E2BA725D600B054F6 /* WorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
+		4D110A4E2BA725D600B054F6 /* StartSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSessionView.swift; sourceTree = "<group>"; };
 		4D110A512BA72E1800B054F6 /* WorkoutItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutItemView.swift; sourceTree = "<group>"; };
 		4D31ADA42BA5E5D200EF944E /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D31ADA92BA5E5D200EF944E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +34,9 @@
 		4D4FEC4C2BAB208D008D6B53 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4DB6A2752BA9E997009B770A /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		4DB6A2772BA9E9A1009B770A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C1A52E992BB08C9800C4E11E /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		C1A52E9B2BB08CB900C4E11E /* ProfileDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsView.swift; sourceTree = "<group>"; };
+		C1A52E9D2BB08E7C00C4E11E /* ProfileMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,7 @@
 		4D110A502BA72D5800B054F6 /* YourWorkouts */ = {
 			isa = PBXGroup;
 			children = (
-				4D110A4E2BA725D600B054F6 /* WorkoutsView.swift */,
+				4D110A4E2BA725D600B054F6 /* StartSessionView.swift */,
 				4D110A512BA72E1800B054F6 /* WorkoutItemView.swift */,
 			);
 			path = YourWorkouts;
@@ -144,6 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				4D4FEC4C2BAB208D008D6B53 /* ProfileView.swift */,
+				C1A52E9D2BB08E7C00C4E11E /* ProfileMenuBar.swift */,
+				C1A52E9B2BB08CB900C4E11E /* ProfileDetailsView.swift */,
+				C1A52E992BB08C9800C4E11E /* PostView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -228,12 +237,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D4FEC4D2BAB208D008D6B53 /* ProfileView.swift in Sources */,
+				C1A52E9C2BB08CB900C4E11E /* ProfileDetailsView.swift in Sources */,
 				4D31ADAA2BA5E5D200EF944E /* ContentView.swift in Sources */,
 				4D110A4B2BA7242F00B054F6 /* SessionView.swift in Sources */,
 				4DB6A2782BA9E9A2009B770A /* TabBarView.swift in Sources */,
-				4D110A4F2BA725D600B054F6 /* WorkoutsView.swift in Sources */,
+				4D110A4F2BA725D600B054F6 /* StartSessionView.swift in Sources */,
+				C1A52E9E2BB08E7C00C4E11E /* ProfileMenuBar.swift in Sources */,
 				4D110A522BA72E1800B054F6 /* WorkoutItemView.swift in Sources */,
 				4D110A4D2BA7254E00B054F6 /* FirstAppApp.swift in Sources */,
+				C1A52E9A2BB08C9800C4E11E /* PostView.swift in Sources */,
 				4DB6A2762BA9E998009B770A /* TabBarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
